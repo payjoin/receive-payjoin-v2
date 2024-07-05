@@ -1,0 +1,13 @@
+[package]
+name = "receive"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bitcoincore-rpc = "0.17.0"
+payjoin = { version = "0.18.0", features = ["receive", "v2", "io"] }
+reqwest = "0.12.0"
+tokio = { version = "1.36.0", features = ["full"] }
+url = "2.5.0"
